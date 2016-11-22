@@ -1,0 +1,54 @@
+/*Global*/
+    html *
+    {
+        color: black;
+    }
+
+    div.body {
+        padding: 50px;
+        font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    }
+
+/*Headers*/
+    h1 {
+        font-family: Impact, Charcoal, sans-serif;
+    }
+
+/*NavBar*/
+    div.titleBar{
+        padding: 0px;
+    }
+
+    .navbar {
+        background-color: black;
+        padding-left: 50px;
+    }
+
+
+    nav a {
+        color: white;
+        font-family: Impact, Charcoal, sans-serif;
+        font-size: 25px;
+    }
+
+    nav a:hover, nav a.active, nav a:focus {
+        color: orange;
+        text-decoration: inherit;
+    }
+
+/*Tables*/
+    table {
+        table-layout: auto;
+        border-collapse: collapse;
+    }
+    td {
+        background-color: #FFFFFF;
+        width: inherit;
+    }
+    .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+        background-color: #CCEBFF;
+    }
+    .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+        font-weight: bold;
+        background-color: #f4a742;
+    }

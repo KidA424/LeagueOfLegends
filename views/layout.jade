@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title= title
+
+    //- jQuery
+    script(src="https://code.jquery.com/jquery-3.1.1.js")
+
+    //- Bootstrap
+    script(src='https://www.atlasestateagents.co.uk/javascript/tether.min.js')
+    link(rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js")
+
+    //- Angular
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js')
+    script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js")
+
+    //- Utils
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+    block head
+
+  body(ng-app='app')
+    div.titleBar
+      nav.navbar.navbar-dark(role="navigation")
+        ul.nav.navbar-nav
+          li.nav-item
+            a(href='#/') Home
+          li.nav-item
+            a(href='#champions') Champions
+    div(class='body')
+      block content
