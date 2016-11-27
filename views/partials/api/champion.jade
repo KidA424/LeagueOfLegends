@@ -1,0 +1,12 @@
+div(ng-if='isLoaded()')
+  h1 {{ champion.name }}
+  img(ng-src='{{imageUrl}}')
+  table.table.table-striped.table-hover.table-bordered
+    thead.thead-inverse
+      tr
+        th Stat
+        th Value
+    tbody
+      tr(ng-repeat="x in Utils.keys(champion.stats).sort()")
+        td {{ x }}
+        td {{ champion.stats[x] }}

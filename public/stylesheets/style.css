@@ -40,6 +40,7 @@
     table {
         table-layout: auto;
         border-collapse: collapse;
+        width: 50%;
     }
     td {
         background-color: #FFFFFF;

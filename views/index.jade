@@ -29,9 +29,9 @@ html
       nav.navbar.navbar-dark(role="navigation")
         ul.nav.navbar-nav
           li.nav-item
-            a(href='#/' class="ng-class: {{active == 'Home' ? 'active' : '' }}" ng-click="active='Home'") Home
+            a(href='#/' class="ng-class: {{(active == 'Home') ? 'active' : '' }}") Home
           li.nav-item
-            a(href='#champions' class="ng-class: {{active == 'Champions' ? 'active' : '' }}" ng-click="active='Champions'") Champions
+            a(href='#champions' class="ng-class: {{(active == 'Champions') ? 'active' : '' }}") Champions
     div(class='body')
       div(ng-view)
       script(src = 'javascripts/app.js')

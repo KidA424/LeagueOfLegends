@@ -20,4 +20,10 @@ router.get('/champions/:champName', function(req, res, next) {
     });
 });
 
+router.get('/champions/images/:champName', function(req, res, next) {
+    championModel.getChampionImageUrl(req.params.champName, function(imageUrl) {
+        res.send(imageUrl);
+    });
+});
+
 module.exports = router;

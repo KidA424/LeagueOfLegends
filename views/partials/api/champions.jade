@@ -1,11 +1,11 @@
-h1 Champions
-//-div(ng-controller='champions')
-table.table.table-striped.table-hover.table-bordered
-  thead.thead-inverse
-    tr
-      th Name
-      th Title
-  tbody
-    tr(ng-repeat="x in Utils.keys(champions).sort()")
-      td {{ x }}
-      td {{ champions[x].title }}
+div(ng-if='loaded')
+  h1 Champions
+  table.table.table-striped.table-hover.table-bordered
+    thead.thead-inverse
+      tr
+        th Name
+        th Title
+    tbody
+      tr(ng-repeat="x in Utils.keys(champions).sort()" ng-click="trClick(x)")
+        td {{ champions[x].name }}
+        td {{ champions[x].title }}
