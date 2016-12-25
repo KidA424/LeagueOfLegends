@@ -4,7 +4,6 @@ This app requires an extra file, called riotApiKey.js, to be created in the root
 
 ```javascript
 module.exports.riotApiKey =  // a valid riot api key
->>>>>>> refs/remotes/origin/master
 ```
 
 
